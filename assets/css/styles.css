@@ -74,8 +74,9 @@
 .page-2 > a{
     color: blue;
     text-decoration: none;
-    padding: 5px;
-    border: solid 2px grey
+    padding: 10px;
+    align-content: center;
+    border: solid 1px grey
 }
 footer{
     background-color: blue;
