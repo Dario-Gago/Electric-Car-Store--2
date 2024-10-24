@@ -1,0 +1,164 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #556ce3;
+        color: white;
+        height: 70px;
+        grid-area: nav;
+    }
+    .options{
+        display: none;
+        grid-area: options;
+    }
+    
+    nav > div{
+        display: flex;
+        gap: 2em;
+        align-items: center;
+    }
+    .orden{
+        grid-area: section;
+        background-color: rgb(173, 182, 189);
+        text-align: center;
+    }
+    .orden > select{
+        margin: 3%;
+        height: 30px;
+        width: 50%;
+    }
+    main{
+        grid-area: main;
+    }
+    .look{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .look > article{
+        width: 60%;
+        margin: 60px auto    ;
+        border: solid 1px black;
+        text-align: center;
+    }
+    .look > article > img{
+        width: 80%;
+    }
+    .look > article > button{
+        background-color: #556ce3;
+        color: white;
+    }
+.page{
+    grid-area: page;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+.page > a{
+    color: blue;
+    text-decoration: none;
+    padding: 5px;
+    border: solid 2px grey
+}
+.page-2{
+    display: none;
+    grid-area: page-2;
+    justify-content: center;
+    gap: 1em;
+}
+.page-2 > a{
+    color: blue;
+    text-decoration: none;
+    padding: 5px;
+    border: solid 2px grey
+}
+footer{
+    background-color: blue;
+    grid-area: footer;
+    color: white;
+    text-align: center;
+}
+aside{
+    display: none;
+    background-color: blue ;
+    color: white;
+    grid-area: aside;
+    text-align: center;
+}
+    @media (min-width: 822px) {
+        body{
+            display: grid;
+            grid-template-areas: 
+            'nav nav'
+            'section main'
+            'footer footer'
+            ;
+            grid-template-columns: 0.5fr 2fr;
+        }
+        main{
+            height: calc(100vh - 105px);
+            overflow-y: scroll;
+
+        }
+        .look > article{
+            margin: 20px;
+            width: 35%;
+        }
+        .bars{
+            display: none;
+        }
+        .options{
+            display: flex;
+        }
+        .options > a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+    @media (min-width: 1200px) {
+        .look > article{
+            width: 20%;
+        }
+        main{
+            height: calc(100vh - 149px);
+            overflow-y: scroll;
+
+        }
+        nav{
+            height: 100%;
+        }
+        aside{
+            display: flex;
+            flex-direction: column;
+            gap: 3em;
+        }
+        aside > div > p{
+            margin: 4% 0;
+        }
+        .options{
+            display: none;
+        }
+        footer{
+            background-color: blueviolet;
+            align-content: center;
+        }
+        .page{
+            display: none;
+        }
+        .page-2{
+            display: flex;
+        }
+        body{
+            grid-template-areas: 
+            'nav section'
+            'aside main'
+            'footer page-2'
+            ;
+        }
+        
+    }
