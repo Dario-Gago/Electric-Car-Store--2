@@ -133,7 +133,7 @@ aside{
             width: 20%;
         }
         main{
-            height: calc(100vh - 149px);
+            height: calc(100vh - 200px);
             overflow-y: scroll;
 
         }
@@ -154,12 +154,15 @@ aside{
         footer{
             background-color: blueviolet;
             align-content: center;
+            font-size: 25px;
         }
         .page{
             display: none;
         }
         .page-2{
-            display: flex;
+            
+            display: block;
+            margin: auto;
         }
         body{
             grid-template-areas: 
