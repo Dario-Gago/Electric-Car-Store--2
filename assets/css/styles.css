@@ -50,6 +50,7 @@
         width: 80%;
     }
     .look > article > button{
+        cursor: pointer;
         background-color: #556ce3;
         padding: 1em;
         color: white;
