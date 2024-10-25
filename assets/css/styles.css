@@ -51,6 +51,7 @@
     }
     .look > article > button{
         background-color: #556ce3;
+        padding: 1em;
         color: white;
     }
 .page{
